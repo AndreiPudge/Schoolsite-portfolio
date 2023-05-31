@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <title>MFSite</title>
+        <meta charset="UTF-8"/>
+          <meta name="keywords" content="SchoolSite, School№12khv, Khabarovsk"/>
+        <meta name="description" content="School website"/>
+          <meta name="author" content="Yurchenko Nikita"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+          <link rel="stylesheet" href="Styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <style>
+
+            * {
+            box-sizing: border-box; /*Учитывает любые границы и отступы*/
+            }
+
+        </style>
+
+    </head>
+
+    <body class="body">
+
+        <img src="Images/school-kids.jpg" alt="school-kids" class="main-image" id="mi">
+
+        <nav> <!--Navpanel-->
+
+            <div class="navpanel">
+                <!--<a href="#"><img class="schoolname" src="Images/МБОУ СОШ №30.png" alt="МБОУ СОШ №30.png"></a>-->
+                <a class="schoolname" href="#">SCHOOL</a>
+                <a class="navtext fs25" href="#" id="nb1">ENTRANCE</a>
+                <a class="navtext fs25" href="#" id="nb2">SCHEDULE</a>
+                <a class="navtext fs25" href="#" id="nb3">NEWS</a>
+                <button class="schoolnumber-border" id="NumberButton" onclick="CopyNumber()"></button>
+                <p class="schoolnumber" id="number">+652 2348 321</p>
+            </div>
+
+        </nav>
+
+        <div class="main-image-darkness">
+
+            <p class="schoolnamecenter" id="mt">МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ</p>
+            <p class="schoolnamebottom" id="mt">СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА</p>
+            <p class="schooladress fs30">ХАБАРОВСК, ЛЕНИНА, 39</p>
+
+        </div>
+
+        <div class="copyinfo fs17" id="ci"><p class="copyinfo-text" id="ct">ТЕКСТ СКОПИРОВАН</p></div>
+
+        <section>
+         <!--History and slideshow-->
+
+         <div class="storyandslide-block">
+            <span class="schoolstory-block" id="sb">
+
+                <p class="schoolstory-title fs25">НЕМНОГО О ШКОЛЕ</p>
+                <p class="schoolstory-text fs25">
+                    Школа №12 г. Хабаровска была открыта в 1963 году<br/>
+                    За много лет своего существования она прошла<br/>
+                    интересный путь развития. В школе работает<br/>
+                    команда педагогов единомышленников, готовых<br/>
+                    к творческой самореализации, сотрудничеству,<br/>
+                    развитию педагогических идей и практик.<br/>
+                </p>
+
+            </span>
+
+            <div class="slider" onmouseover="MO()" onmouseleave="MOL()">
+                <div class="slides" id="sl">
+                    <div class="indicators">
+                        <input type="radio" name="r" id="r1" checked>
+                            <label for="r1" class="bar" id="l1"></label>
+                        <input type="radio" name="r" id="r2">
+                            <label for="r2" class="bar" id="l2"></label>
+                        <input type="radio" name="r" id="r3">
+                            <label for="r3" class="bar" id="l3"></label>
+                        <input type="radio" name="r" id="r4">
+                            <label for="r4" class="bar" id="l4"></label>
+                        <input type="radio" name="r" id="r5">
+                            <label for="r5" class="bar" id="l5"></label>
+                    </div>
+
+                    <div class="slide s1" style="background-color: blueviolet;"><img src="Images/slide_1.png"></div>
+                    <div class="slide" style="background-color: rgb(155, 255, 152);"><img src="Images/slide_2.png"></div>
+                    <div class="slide" style="background-color: rgb(0, 82, 114);"><img src="Images/slide_3.png"></div>
+                    <div class="slide" style="background-color: rgb(255, 226, 96);"><img src="Images/slide_4.jpg"></div>
+                    <div class="slide" style="background-color: rgb(173, 53, 53);"><img src="Images/slide_5.png"></div>
+                </div>
+            </div>
+        </div>
+
+         <!--Director-->
+
+            <div class="director-block" id="db">
+
+                <p class="director fs50">ДИРЕКТОР ШКОЛЫ</p>
+                <p class="director-name fs40">Савостина Елена Александровна</p>
+                <img src="Images/Director.jpg" alt="Director" class="director-img">
+
+                <p class="director-text fs35" style="top: 20%;">
+                    Я рада приветствовать вас на сайте нашей<br/>
+                    образовательной организации!</p>
+
+                <p class="director-text fs30" style="top: 20%;">
+                     · Нашими приоритетами всегда были высокое<br/>
+                    качество образования, создание максимально<br/>
+                    эффективных условий обучения и развития<br/>
+                    для каждого обучающегося.</p>
+
+                <p class="director-text fs30" style="top: 20%;">
+                     · Система образования школы даёт хорошую базу<br/>
+                    для продолжения образования в любой области,<br/>
+                    поэтому наши выпускники учатся в разных ВУЗах<br/>
+                    Хабаровска, Москвы, Санкт-Петербурга,<br/>
+                    Новосибирска и за рубежом.</p>
+
+                <p class="director-text fs30" style="top: 20%;">
+                    Мы все хотим видеть наших детей счастливыми,<br/>
+                    нужными и востребованными, преуспевающими<br/>
+                    и уверенными в завтрашнем дне!</p>
+
+            </div>
+
+         <!--Quote-->
+
+            <div class="quote-block" id="qb">
+                <p class="quote-text fs50">Образование - самый мощный способ, с <br/>
+                    помощью которого можно изменить мир к <br/>
+                    лучшему.</p>
+            </div>
+
+         <!--Profiles-->
+
+            <div class="profile-block" id="pb">
+                <div class="profile-inline-flex">
+                    <div class="profile-half h1">
+                    
+                        <p class="profile-title fs50">Профильное обучение 10-11 классов</p>
+
+                        <div class="profile-images-block">
+                            <div class="profile-info-list" id="pil_l">
+                                <div class="profile-info-list-closer" onclick="PilClose(1)"></div>
+                                <img src="Images/pil_l.png" style="width: 100%; height: 100%;">
+                                <p class="pil-title">СОЦИАЛЬНОГУМАНИТАРНЫЙ</p>
+                                <p class="pil-brackets">(ФИЛОЛОГИЧЕСКОЕ НАПРАВЛЕНИЕ)</p>
+                                <p class="pil-left-sub" style="top: 185px;">Профильные предметы:</p>
+                                <p class="pil-left-sub" style="top: 265px;">Предметы ОГЭ:</p>
+                                <p class="pil-subjects" style="top: 201px; left: 458px;">РУССКИЙ ЯЗЫК АНГЛИЙСКИЙ ЯЗЫК ОБЩЕСТВОЗНАНИЕ ПРАВО</p>
+                                <p class="pil-subjects" style="top: 280px; left: 495px;">РУССКИЙ ЯЗЫК ОБЩЕСТВОЗНАНИЕ АНГЛИЙСКИЙ ЯЗЫК</p>
+                                <p class="pil-italic">В профиль набирается по 10-12 человек</p>
+                                <p class="pil-downtext">
+                                    Приём заявлений в 10 класс будет осуществляться 1 июля и 6, 7 и 8 июля с 10.00 до 13.00</br>
+                                    </br>
+                                    При подаче заявлений при себе иметь:</br>
+                                        Аттестат об основном общем образовании (оригинал+копия)</br>
+                                        Выписку баллов результатов ОГЭ</br>
+                                        Паспорт ребёнка (оригинал+копия)</br>
+                                        СНИЛС ребёнка (оригинал+копия)</br>
+                                        Паспорт родителя (законного представителя) - документ, подтверждающий родство с</br>
+                                        ребёнком</br>
+                                    </br>
+                                    Желательно приходить с заполненным заявлением и согласием на обработку ПД</p>
+                                <span class="pil-border"></span>
+                            </div>
+                            
+                            <div class="profile-info-list" id="pil_f">
+                                <div class="profile-info-list-closer" onclick="PilClose(2)"></div>
+                                <img src="Images/pil_f.png" style="width: 100%; height: 100%;">
+                                <p class="pil-title">ТЕХНОЛОГИЧЕСКИЙ</p>
+                                <p class="pil-brackets">(ФИЗИКО-МАТЕМАТИЧЕСКОЕ НАПРАВЛЕНИЕ)</p>
+                                <p class="pil-left-sub" style="top: 185px;">Профильные предметы:</p>
+                                <p class="pil-left-sub" style="top: 265px;">Предметы ОГЭ:</p>
+                                <p class="pil-subjects" style="top: 201px; left: 430px;">ПРОФИЛЬНАЯ МАТЕМАТИКА ФИЗИКА ИНФОРМАТИКА МАТЕРИАЛОВЕДЕНИЕ</p>
+                                <p class="pil-subjects" style="top: 280px; left: 610px;">МАТЕМАТИКА ФИЗИКА ИНФОРМАТИКА</p>
+                                <p class="pil-italic">В профиль набирается по 10-12 человек</p>
+                                <p class="pil-downtext">
+                                    Приём заявлений в 10 класс будет осуществляться 1 июля и 6, 7 и 8 июля с 10.00 до 13.00</br>
+                                    </br>
+                                    При подаче заявлений при себе иметь:</br>
+                                        Аттестат об основном общем образовании (оригинал+копия)</br>
+                                        Выписку баллов результатов ОГЭ</br>
+                                        Паспорт ребёнка (оригинал+копия)</br>
+                                        СНИЛС ребёнка (оригинал+копия)</br>
+                                        Паспорт родителя (законного представителя) - документ, подтверждающий родство с</br>
+                                        ребёнком</br>
+                                    </br>
+                                    Желательно приходить с заполненным заявлением и согласием на обработку ПД</p>
+                                <span class="pil-border"></span>
+                            </div>
+                            <div class="profile-info-list" id="pil_h">
+                                <div class="profile-info-list-closer" onclick="PilClose(3)"></div>
+                                <img src="Images/pil_h.png" style="width: 100%; height: 100%;">
+                                <p class="pil-title">ЕСТЕСТВЕННОНАУЧНЫЙ</p>
+                                <p class="pil-brackets">(МЕДИЦИНСКОЕ НАПРАВЛЕНИЕ)</p>
+                                <p class="pil-left-sub" style="top: 185px;">Профильные предметы:</p>
+                                <p class="pil-left-sub" style="top: 265px;">Предметы ОГЭ:</p>
+                                <p class="pil-subjects" style="top: 201px; left: 430px;">ПРОФИЛЬНАЯ МАТЕМАТИКА ХИМИЯ БИОЛОГИЯ ЭКОЛОГИЯ МАТЕРИАЛОВЕДЕНИЕ</p>
+                                <p class="pil-subjects" style="top: 280px; left: 645px;">МАТЕМАТИКА ХИМИЯ БИОЛОГИЯ</p>
+                                <p class="pil-italic">В профиль набирается по 10-12 человек</p>
+                                <p class="pil-downtext">
+                                    Приём заявлений в 10 класс будет осуществляться 1 июля и 6, 7 и 8 июля с 10.00 до 13.00</br>
+                                    </br>
+                                    При подаче заявлений при себе иметь:</br>
+                                        Аттестат об основном общем образовании (оригинал+копия)</br>
+                                        Выписку баллов результатов ОГЭ</br>
+                                        Паспорт ребёнка (оригинал+копия)</br>
+                                        СНИЛС ребёнка (оригинал+копия)</br>
+                                        Паспорт родителя (законного представителя) - документ, подтверждающий родство с</br>
+                                        ребёнком</br>
+                                    </br>
+                                    Желательно приходить с заполненным заявлением и согласием на обработку ПД</p>
+                                <span class="pil-border"></span>
+                            </div>
+                            <div class="profile-info-list" id="pil_i">
+                                <div class="profile-info-list-closer" onclick="PilClose(4)"></div>
+                                <img src="Images/pil_i.png" style="width: 100%; height: 100%;">
+                                <p class="pil-title">СОЦИАЛЬНОГУМАНИТАРНЫЙ</p>
+                                <p class="pil-brackets">(СОЦИАЛЬНОЕ НАПРАВЛЕНИЕ)</p>
+                                <p class="pil-left-sub" style="top: 185px;">Профильные предметы:</p>
+                                <p class="pil-left-sub" style="top: 265px;">Предметы ОГЭ:</p>
+                                <p class="pil-subjects" style="top: 201px; left: 430px;">РУССКИЙ ЯЗЫК ОБЩЕСТВОЗНАНИЕ ИСТОРИЯ ЭКОНОМИКА ПОЛИТОЛОГИЯ</p>
+                                <p class="pil-subjects" style="top: 280px; left: 580px;">РУССКИЙ ЯЗЫК ОБЩЕСТВОЗНАНИЕ ИСТОРИЯ</p>
+                                <p class="pil-italic">В профиль набирается по 10-12 человек</p>
+                                <p class="pil-downtext">
+                                    Приём заявлений в 10 класс будет осуществляться 1 июля и 6, 7 и 8 июля с 10.00 до 13.00</br>
+                                    </br>
+                                    При подаче заявлений при себе иметь:</br>
+                                        Аттестат об основном общем образовании (оригинал+копия)</br>
+                                        Выписку баллов результатов ОГЭ</br>
+                                        Паспорт ребёнка (оригинал+копия)</br>
+                                        СНИЛС ребёнка (оригинал+копия)</br>
+                                        Паспорт родителя (законного представителя) - документ, подтверждающий родство с</br>
+                                        ребёнком</br>
+                                    </br>
+                                    Желательно приходить с заполненным заявлением и согласием на обработку ПД</p>
+                                <span class="pil-border"></span>
+                            </div>
+
+
+                            <div class="profile-img-block" style="left: 0px; top: 0px;">
+                                <img src="Images/gumanitarniy.jpg" alt="gumanitarniy" class="profile-img">
+                                <p class="profile-name fs35">ЛИНГВИСТИЧЕСКИЙ<br/>ПРОФИЛЬ</p>
+                                <p class="profile-img-block-text">углублённое изучение английского и<br/>русского языков и обществознания</p>
+                                <span class="profile-info" onclick="ProfileInfo(1)"><p class="profile-info-text fs17">Узнать больше</p></span>
+                            </div>
+                            <div class="profile-img-block" style="left: 650px; top: 0px;">
+                                <img src="Images/Fizmat.jpg" alt="Fizmat" class="profile-img">
+                                <p class="profile-name fs35">ТЕХНОЛОГИЧЕСКИЙ<br/>ПРОФИЛЬ</p>
+                                <p class="profile-img-block-text">углублённое изучение физики<br/>информатики и математики</p>
+                                <span class="profile-info" onclick="ProfileInfo(2)"><p class="profile-info-text fs17">Узнать больше</p></span>
+                            </div>
+                            <div class="profile-img-block" style="left: 0px; top: 450px;">
+                                <img src="Images/himbio.jpg" alt="himbio" class="profile-img">
+                                <p class="profile-name fs35">ЕСТЕСТВЕННО-НАУЧНЫЙ<br/>ПРОФИЛЬ</p>
+                                <p class="profile-img-block-text">углублённое изучение математики<br/>химии и биологии</p>
+                                <span class="profile-info" onclick="ProfileInfo(3)"><p class="profile-info-text fs17">Узнать больше</p></span>
+                            </div>
+                            <div class="profile-img-block" style="left: 650px; top: 450px;">
+                                <img src="Images/sotsekonom.jpg" alt="sotsekonom" class="profile-img">
+                                <p class="profile-name fs35">ИСТОРИЧЕСКИЙ<br/>ПРОФИЛЬ</p>
+                                <p class="profile-img-block-text">углублённое изучение русского языка<br/>истории и обществознания</p>
+                                <span class="profile-info" onclick="ProfileInfo(4)"><p class="profile-info-text fs17">Узнать больше</p></span>
+                            </div>
+                        </div>
+
+                        <div class="profile-buttons-block">
+                            <a href="#"><div class="profile-info-border" style="left: 0%;">
+                                <p class="pit fs35">ЗАЯВЛЕНИЕ</p>
+                            </div></a>
+                            <a href="#"><div class="profile-info-border" style="left: 350px;">
+                                <p class="pit fs35">СОГЛАСИЕ</p>
+                            </div></a>
+                            <div class="profile-info-border" style="left: 700px;" onclick="ProfileHalfSlide(1)">
+                                <p class="pit fs35">1 КЛАСС ⇨</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-half">
+
+                        <p class="profile-title fs50">ПРИЁМ В ПЕРВЫЙ КЛАСС</p>
+
+
+
+                        <div class="profile-buttons-block" style="left: 25.4%; width: 700px;">
+                            <div class="profile-info-border" style="left: 0%;" onclick="ProfileHalfSlide(2)">
+                                <p class="pit fs35">⇦ 10 КЛАСС</p>
+                            </div></a>
+                            <a href="#"><div class="profile-info-border" style="left: 350px;">
+                                <p class="pit fs35">СОГЛАСИЕ</p>
+                            </div></a>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+         <!--Teachers-->
+
+            <div class="teacher-block" id="tb">
+
+                <p class="teacher-title fs50">ПРЕПОДАВАТЕЛЬСКИЙ СОСТАВ</p>
+
+                <div class="teacher-images-block">
+                <div class="teacher-img sb1" style="top: 0px;">
+                    <img src="Images/teacher1.jpg" alt="Andrei" class="teacher-img">
+                    <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                </div>
+                <p class="teacher-name tfs30 str1 sbta1">Шелемеха Оксана Викторовна</p>
+                <p class="teacher-post fs20 str2 sbta2">УЧИТЕЛЬ ХИМИИ И ЭКОЛОГИИ</p>
+
+                    <div class="teacher-img sb2" style="top: 0px;">
+                        <img src="Images/teacher2.jpg" alt="AA" class="teacher-img">
+                        <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                    </div>
+                    <p class="teacher-name tfs30 str1" style="left: 455px;">Терскова Людмила Николаевна</p>
+                    <p class="teacher-post fs20 str2" style="left: 595px; text-align: center;">УЧИТЕЛЬ ФИЗИКИ</p>
+
+                        <div class="teacher-img sb3" style="top: 0px;">
+                            <img src="Images/teacher3.jpg" alt="Him" class="teacher-img">
+                        </div>
+                        <p class="teacher-name tfs30 str1 sbth1">Фургал Наталья Ивановна</p>
+                        <p class="teacher-post fs20 str2 sbth2">УЧИТЕЛЬ НАЧАЛЬНОЙ ШКОЛЫ</p>
+
+                        <div class="teacher-img sb1" style="top: 565px;">
+                            <img src="Images/teacher4.jpg" alt="Rusichka" class="teacher-img">
+                            <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                        </div>
+                        <p class="teacher-name tfs30 str3 sbem" style="font-size: 27px;">Отводникова Елена Геннадьевна</p>
+                        <p class="teacher-post fs20 str4 sbem" style="text-align: center; left: 70px;">УЧИТЕЛЬ РУССКОГО ЯЗЫКА</br>И ЛИТЕРАТУРЫ</p>
+
+                    <div class="teacher-img sb2" style="top: 565px;">
+                        <img src="Images/teacher5.jpg" alt="OJ" class="teacher-img">
+                        <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                    </div>
+                    <p class="teacher-name tfs30 str3" style="font-size: 27px; left: 440px;">Жукатинская Марина Владимировна</p>
+                    <p class="teacher-post fs20 str4" style="left: 530px;">УЧИТЕЛЬ АНГЛИЙСКОГО ЯЗЫКА</p>
+
+                <div class="teacher-img sb3" style="top: 565px;">
+                    <img src="Images/teacher6.jpg" alt="Semen" class="teacher-img">
+                    <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                </div>
+                <p class="teacher-name tfs30 str3 sbtsm1">Кельнер Алексей Михайлович</p>
+                <p class="teacher-post fs20 str4 sbtsm2">ЗАМ ДИРЕКТОРА ПО БЕЗОПАСНОСТИ</br>УЧИТЕЛЬ ОБЖ</p>
+                </div>
+
+                <a href="#"><div class="teacher-info-border" style="top: 1350px; left: 50%; transform: translate(-50%); border-color: #2D68FF;">
+                    <p class="teacher-info-text fs50">ПОДРОБНЕЕ</p>
+                </div></a>
+
+            </div>
+
+         <!--Gallery-->
+
+            <div class="gallery-block">
+                <div class="greengalleryblock"></div>
+                <div class="bluegalleryblock"></div>
+
+                <span class="gallery-block">
+                    <p class="gallery-title fs50">ФОТОГАЛЕРЕЯ</p>
+                </span>
+
+                <div class="gallery-wrapper">
+                    <div class="gallery-line">
+                        <img class="gallery-img gi1" src="Images/gramota1.png" id="gimg1"></img>
+                        <img class="gallery-img gi2" src="Images/gramota2.png" id="gimg2"></img>
+                        <img class="gallery-img gi3 big" src="Images/gramota3.png" id="gimg3"></img>
+                        <img class="gallery-img gi4" src="Images/gramota4.png" id="gimg4"></img>
+                        <img class="gallery-img gi5" src="Images/gramota5.png" id="gimg5"></img>
+                    </div>
+                </div>
+
+                <div class="gallery-buttons" style="left: 0%;" id="gbl" onclick="gblClick();"></div>
+                <div class="gallery-buttons" style="right: 0%;" id="gbr" onclick="gbrClick();"></div>
+
+            </div>
+
+         <!--Contacts and map-->
+
+        <div class="contactsandmap-block">
+            <div class="contacts-block">
+                <p class="contacts-text-top fs40" id="ctt1">Муниципальное бюджетное<br/>общеобразовательное учреждение</p>
+                <p class="contacts-text-top fs40" id="ctt2">Средняя общеобразовательная школа<br/>№12 города Хабаровск</p>
+                <p class="contacts-adress-text fs40" id="ctat">Ленина, 39<br/>Хабаровск, Россия</p>
+                <p class="contacts fs25" id="ctt">m.sosh12@yandex.ru<br/>+7 (421) 2-22-17-08</p>
+                <!--<p class="copyright fs17" style="top: 671px;">© 2022 Yurchenko Nikita</p>-->
+            </div>
+
+            <div class="map-block">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab5773fc60993e2c650a1747612d8bd6e463fdf62fdcb57a4b86fe6c66d336294&amp;source=constructor" width="100%" height="864px" frameborder="0"></iframe>
+                <div class="mapbuttons"></div>
+            </div>
+
+        </div>
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                <a href="#"><span class="call-border"><p class="call-text">ОБРАТНАЯ СВЯЗЬ</p></span></a>
+                <p class="call-info">Вы можете задать нам вопросы<br/>через специальную форму</p>
+
+            </div>
+        </footer>
+
+        <!--Scripts-->
+        
+        <script>
+            function CopyNumber()
+            {
+                const CopiedNumber = document.getElementById("number").innerText;
+                const el = document.createElement('textarea');
+                el.value = CopiedNumber;
+                el.setAttribute('readonly', '');
+                el.style.position = 'absolute';
+                //el.style.left = '-9999px';
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+
+            //
+
+                var copyinfo = document.getElementById("ci");
+                var copyinfo_text = document.getElementById("ct");
+                var ae = document.querySelector("_active");
+
+                copyinfo.classList.add("_active");
+                copyinfo_text.classList.add("_active");
+
+                copyinfo.addEventListener('animationend', function(e) {
+                    copyinfo.classList.remove('_active');
+                    copyinfo_text.classList.remove('_active');
+                });
+            }
+    
+        </script>
+
+        <script>
+            function ProfileInfo(value)
+            {
+                var pill = document.getElementById("pil_l")
+                var pilf = document.getElementById("pil_f")
+                var pilh = document.getElementById("pil_h")
+                var pili = document.getElementById("pil_i")
+                var ae = document.querySelector("_active");
+
+                switch (value)
+                {
+                    case 1:
+                        pill.classList.add("_active");
+                        window.scrollTo({left: 0, top: 3255, behavior: 'smooth'});
+                        break;
+
+                    case 2:
+                        pilf.classList.add("_active");
+                        window.scrollTo({left: 0, top: 3255, behavior: 'smooth'});
+                        break;
+
+                    case 3:
+                        pilh.classList.add("_active");
+                        window.scrollTo({left: 0, top: 3255, behavior: 'smooth'});
+                        break;
+
+                    case 4:
+                        pili.classList.add("_active");
+                        window.scrollTo({left: 0, top: 3255, behavior: 'smooth'});
+                        break;
+                }
+            }
+
+            function PilClose(value)
+            {
+                var pill = document.getElementById("pil_l")
+                var pilf = document.getElementById("pil_f")
+                var pilh = document.getElementById("pil_h")
+                var pili = document.getElementById("pil_i")
+                var ae = document.querySelector("_active2");
+
+                if(pill.classList.contains("_active")||pilf.classList.contains("_active")||pilh.classList.contains("_active")||pili.classList.contains("_active"))
+                {
+                    switch (value)
+                    {
+                        case 1:
+                            pill.classList.remove("_active");
+                            pill.classList.add("_active2");
+                            pill.addEventListener('animationend', function(e) {pill.classList.remove('_active2');});
+                            break;
+
+                        case 2:
+                            pilf.classList.remove("_active");
+                            pilf.classList.add("_active2");
+                            pilf.addEventListener('animationend', function(e) {pilf.classList.remove('_active2');});
+                            break;
+
+                        case 3:
+                            pilh.classList.remove("_active");
+                            pilh.classList.add("_active2");
+                            pilh.addEventListener('animationend', function(e) {pilh.classList.remove('_active2');});
+                            break;
+
+                        case 4:
+                            pili.classList.remove("_active");
+                            pili.classList.add("_active2");
+                            pili.addEventListener('animationend', function(e) {pili.classList.remove('_active2');});
+                            break;
+                    }
+                }
+            }
+
+
+        </script>
+
+        <script>
+            let SlideNumber = 1;
+
+            let s1 = document.querySelector(".s1");
+            let style = getComputedStyle(document.querySelector(".s1"));
+
+            let l1 = document.getElementById("l1");
+            let l2 = document.getElementById("l2");
+            let l3 = document.getElementById("l3");
+            let l4 = document.getElementById("l4");
+            let l5 = document.getElementById("l5");
+
+            let timer = setInterval(function() {Slide();},4000);
+            function MO(value) {clearInterval(timer);}
+            function MOL() {timer = setInterval(function() {Slide();},2500);}
+
+            function Slide()
+            {
+                if (SlideNumber >= 5)
+                {
+                    l1.click();
+                }
+                else
+                {
+                    SlideNumber++;
+                    switch (SlideNumber)
+                    {
+                        case 1:
+                        //s1.style.marginLeft = "0%";
+                        l1.click();
+                        break;
+
+                        case 2:
+                       // s1.style.marginLeft = "-20%";
+                        l2.click();
+                        break;
+
+                        case 3:
+                       // s1.style.marginLeft = "-40%";
+                        l3.click();
+                        break;
+
+                        case 4:
+                       // s1.style.marginLeft = "-60%";
+                        l4.click();
+                        break;
+
+                        case 5:
+                       // s1.style.marginLeft = "-80%";
+                        l5.click();
+                        break;
+                    }
+                }
+            }
+
+            document.addEventListener("click", function(e)
+            {
+                l1.onclick = function() {s1.style.marginLeft = "0%"; SlideNumber = 1; clearInterval(timer); timer = setInterval(function() {Slide();},4000);}
+                l2.onclick = function() {s1.style.marginLeft = "-20%"; SlideNumber = 2; clearInterval(timer); timer = setInterval(function() {Slide();},4000);}
+                l3.onclick = function() {s1.style.marginLeft = "-40%"; SlideNumber = 3; clearInterval(timer); timer = setInterval(function() {Slide();},4000);}
+                l4.onclick = function() {s1.style.marginLeft = "-60%"; SlideNumber = 4; clearInterval(timer); timer = setInterval(function() {Slide();},4000);}
+                l5.onclick = function() {s1.style.marginLeft = "-80%"; SlideNumber = 5; clearInterval(timer); timer = setInterval(function() {Slide();},4000);}
+            });
+
+            l1.click();
+
+        </script>
+
+        <script>
+            let gbl = document.getElementById("gbl");
+            let gbr = document.getElementById("gbr");
+
+            let g1 = document.getElementById("gimg1");
+            let g2 = document.getElementById("gimg2");
+            let g3 = document.getElementById("gimg3");
+            let g4 = document.getElementById("gimg4");
+            let g5 = document.getElementById("gimg5");
+
+            let n1 = "0px";
+            let n2 = "300px";
+            let n3 = "600px";
+            let n4 = "1100px";
+            let n5 = "1400px";
+
+            let op1 = "1";
+            let op2 = "1";
+
+            var imgIndex = 1;
+            var start = true;
+            var rl;
+
+            function giopacity()
+            {
+                if (op1 == "0") {
+                    switch(imgIndex) {
+                        case 1:
+                            g1.style.opacity = "1"; g2.style.opacity = "1";
+                            g4.style.opacity = "1"; g5.style.opacity = "1";
+                        break;
+
+                        case 2:
+                            g4.style.opacity = "1"; g1.style.opacity = "1";
+                            g3.style.opacity = "1"; g5.style.opacity = "1";
+                        break;
+
+                        case 3:
+                            g3.style.opacity = "1"; g2.style.opacity = "1";
+                            g5.style.opacity = "1"; g4.style.opacity = "1";
+                        break;
+
+                        case 4:
+                            g2.style.opacity = "1"; g1.style.opacity = "1";
+                            g4.style.opacity = "1"; g3.style.opacity = "1";
+                        break;
+
+                        case 5:
+                            g1.style.opacity = "1"; g3.style.opacity = "1";
+                            g5.style.opacity = "1"; g2.style.opacity = "1";
+                        break;
+                    }
+                }
+            }
+
+            function gblClick()
+            {
+                giopacity()
+                if (imgIndex == 1) {
+                    imgIndex = 5;
+                }
+                else {
+                    imgIndex--;
+                }
+                rl = "l";
+                distributor();
+            }
+
+            function gbrClick()
+            {
+                giopacity()
+                if (imgIndex == 5) {
+                    imgIndex = 1;
+                }
+                else {
+                    imgIndex++;
+                }
+                rl = "r";
+                distributor();
+            }
+
+            function distributor()
+            {
+                switch (imgIndex)
+                {
+                    case 1:
+                        if (rl == "r") {g4.classList.remove("big");}else {g2.classList.remove("big");}
+                        g1.style.left = n1; g1.style.opacity = op1;
+                        g2.style.left = n2; g2.style.opacity = op2;
+                        g3.style.left = n3; g3.classList.add("big");
+                        g4.style.left = n4; g4.style.opacity = op2;
+                        g5.style.left = n5; g5.style.opacity = op1;
+                    break;
+
+                    case 2:
+                        if (start = true) {
+                            g3.classList.remove("big");
+                            start = false;
+                        }
+                        if (rl == "r") {g3.classList.remove("big");}else {g1.classList.remove("big");}
+                        g1.style.left = n2; g1.style.opacity = op2;
+                        g2.style.left = n3; g2.classList.add("big");
+                        g3.style.left = n4; g3.style.opacity = op2;
+                        g4.style.left = n5; g4.style.opacity = op1;
+                        g5.style.left = n1; g5.style.opacity = op1;
+                    break;
+
+                    case 3:
+                        if (rl == "r") {g2.classList.remove("big");}else {g5.classList.remove("big");}
+                        g1.style.left = n3; g1.classList.add("big");
+                        g2.style.left = n4; g2.style.opacity = op2;
+                        g3.style.left = n5; g3.style.opacity = op1;
+                        g4.style.left = n1; g4.style.opacity = op1;
+                        g5.style.left = n2; g5.style.opacity = op2;
+                    break;
+
+                    case 4:
+                        if (rl == "r") {g1.classList.remove("big");}else {g4.classList.remove("big");}
+                        g1.style.left = n4; g1.style.opacity = op2;
+                        g2.style.left = n5; g2.style.opacity = op1;
+                        g3.style.left = n1; g3.style.opacity = op1;
+                        g4.style.left = n2; g4.style.opacity = op2;
+                        g5.style.left = n3; g5.classList.add("big");
+                    break;
+
+                    case 5:
+                        if (start = true) {
+                            g3.classList.remove("big");
+                            start = false;
+                        }
+                        if (rl == "r") {g5.classList.remove("big");}else {g3.classList.remove("big");}
+                        g1.style.left = n5; g1.style.opacity = op1;
+                        g2.style.left = n1; g2.style.opacity = op1;
+                        g3.style.left = n2; g3.style.opacity = op2;
+                        g4.style.left = n3; g4.classList.add("big");
+                        g5.style.left = n4; g5.style.opacity = op2;
+                    break;
+                }
+            }
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+            document.addEventListener("DOMContentLoaded", function(event)
+            {
+                window.onresize = function() 
+                {
+                    resize_info();
+                }
+            });
+
+            function resize_info()
+            {
+                if (window.innerWidth < 1800) {op1 = "0"; distributor();}else {op1 = "1"; distributor();}
+                if (window.innerWidth < 1140) {op2 = "0"; distributor();}else {op2 = "1"; distributor();}
+            }
+            resize_info();
+
+        </script>
+
+        <script>
+            let h1 = document.querySelector(".h1");
+            let pstyle = getComputedStyle(document.querySelector(".h1"));
+
+            function ProfileHalfSlide(value)
+            {
+                switch(value)
+                {
+                    case 1:
+                        h1.style.marginLeft = "-100%";
+                        break;
+                    case 2:
+                        h1.style.marginLeft = "0%";
+                        break;
+                }
+                let timer1 = setInterval(function() {PSlide();},800);
+                function PSlide()
+                {
+                window.scrollTo({left: 0, top: 3142, behavior: 'smooth'});
+                clearInterval(timer1);
+                }
+            }
+        </script>
+
+        <!--<script>
+
+            document.addEventListener("DOMContentLoaded", function(event)
+            {
+                window.onresize = function() 
+                {
+                    resize_info();
+                }
+            });
+
+            function resize_info()
+            {
+
+            }
+
+        </script>-->
+
+    </body>
+
+</html>
