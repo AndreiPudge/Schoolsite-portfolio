@@ -96,8 +96,6 @@ function PilClose(value) {
 
 
 
-
-
 let SlideNumber = 1;
 
 let s1 = document.querySelector(".s1");
@@ -311,7 +309,6 @@ resize_info();
 
 
 
-
 let h1 = document.querySelector(".h1");
 let pstyle = getComputedStyle(document.querySelector(".h1"));
 
@@ -331,14 +328,13 @@ function ProfileHalfSlide(value) {
     }
 }
 
-
-
-
 document.addEventListener("DOMContentLoaded", function (event) {
     window.onresize = function () {
         resize_info();
     }
 });
+
+
 
 function resize_info() {
 

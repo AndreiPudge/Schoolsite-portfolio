@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <title>MFSite</title>
+        <meta charset="UTF-8"/>
+          <meta name="keywords" content="SchoolSite, School№12khv, Khabarovsk"/>
+        <meta name="description" content="School website"/>
+          <meta name="author" content="Yurchenko Nikita"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+          <link rel="stylesheet" href="Styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <style>
+
+            * {
+            box-sizing: border-box; /*Учитывает любые границы и отступы*/
+            }
+
+        </style>
+
+    </head>
+
+    <body class="body">
+
+        <img src="Images/school-kids.jpg" alt="school-kids" class="main-image" id="mi">
+
+        <nav> <!--Navpanel-->
+
+            <div class="navpanel">
+                <a class="schoolname" href="#">SCHOOL</a>
+                <a class="navtext fs25" href="#" id="nb1">ENTRANCE</a>
+                <a class="navtext fs25" href="#" id="nb2">SCHEDULE</a>
+                <a class="navtext fs25" href="#" id="nb3">NEWS</a>
+                <button class="schoolnumber-border" id="NumberButton" onclick="CopyNumber()"></button>
+                <p class="schoolnumber" id="number">"phone number"</p>
+            </div>
+
+        </nav>
+
+        <div class="main-image-darkness">
+
+            <p class="schoolnamecenter" id="mt">FULL NAME</p>
+            <p class="schoolnamebottom" id="mt">OF SCHOOL</p>
+            <p class="schooladress fs30">CITY, STREET, NUMBER</p>
+
+        </div>
+
+        <div class="copyinfo fs17" id="ci"><p class="copyinfo-text" id="ct">TEXT COPIED</p></div>
+
+        <section>
+         <!--History and slideshow-->
+
+         <div class="storyandslide-block">
+            <span class="schoolstory-block" id="sb">
+
+                <p class="schoolstory-title fs25">A BIT ABOUT SCHOOL</p>
+                <p class="schoolstory-text fs25">
+                    Text<br/>
+                    text<br/>
+                    text<br/>
+                    text<br/>
+                    text<br/>
+                    text<br/>
+                </p>
+
+            </span>
+
+            <div class="slider" onmouseover="MO()" onmouseleave="MOL()">
+                <div class="slides" id="sl">
+                    <div class="indicators">
+                        <input type="radio" name="r" id="r1" checked>
+                            <label for="r1" class="bar" id="l1"></label>
+                        <input type="radio" name="r" id="r2">
+                            <label for="r2" class="bar" id="l2"></label>
+                        <input type="radio" name="r" id="r3">
+                            <label for="r3" class="bar" id="l3"></label>
+                        <input type="radio" name="r" id="r4">
+                            <label for="r4" class="bar" id="l4"></label>
+                        <input type="radio" name="r" id="r5">
+                            <label for="r5" class="bar" id="l5"></label>
+                    </div>
+
+                    <div class="slide s1" style="background-color: blueviolet;"><img src="Images/slide_1.png"></div>
+                    <div class="slide" style="background-color: rgb(155, 255, 152);"><img src="Images/slide_2.png"></div>
+                    <div class="slide" style="background-color: rgb(0, 82, 114);"><img src="Images/slide_3.png"></div>
+                    <div class="slide" style="background-color: rgb(255, 226, 96);"><img src="Images/slide_4.jpg"></div>
+                    <div class="slide" style="background-color: rgb(173, 53, 53);"><img src="Images/slide_5.png"></div>
+                </div>
+            </div>
+        </div>
+
+         <!--Director-->
+
+            <div class="director-block" id="db">
+
+                <p class="director fs50">HEAD TEACHER</p>
+                <p class="director-name fs40">Full name</p>
+                <img src="Images/Director.jpg" alt="Director" class="director-img">
+
+                <p class="director-text fs35" style="top: 20%;">
+                    Director's speech<br/>
+                    Director's speech</p>
+
+                <p class="director-text fs30" style="top: 20%;">
+                     · argument for speech<br/>
+                    text<br/>
+                    text<br/>
+                    text</p>
+
+                <p class="director-text fs30" style="top: 20%;">
+                     · second argument<br/>
+                    text<br/>
+                    text<br/>
+                    text<br/>
+                    text</p>
+
+                <p class="director-text fs30" style="top: 20%;">
+                    conclusion<br/>
+                    conclusion<br/>
+                    conclusion</p>
+
+            </div>
+
+         <!--Quote-->
+
+            <div class="quote-block" id="qb">
+                <p class="quote-text fs50">quote about education<br/>
+                    text<br/>
+                    text</p>
+            </div>
+
+         <!--Profiles-->
+
+            <div class="profile-block" id="pb">
+                <div class="profile-inline-flex">
+                    <div class="profile-half h1">
+                    
+                        <p class="profile-title fs50">Profile education for grades 10-11</p>
+
+                        <div class="profile-images-block">
+                            <div class="profile-info-list" id="pil_l">
+                                <div class="profile-info-list-closer" onclick="PilClose(1)"></div>
+                                <img src="Images/pil_l.png" style="width: 100%; height: 100%;">
+                                <p class="pil-title">HUMANITARIAN PROFILE</p>
+                                <p class="pil-brackets">(PHILOLOGICAL DIRECTION)</p>
+                                <p class="pil-left-sub" style="top: 185px;">PROFILE SUBJECTS:</p>
+                                <p class="pil-left-sub" style="top: 265px;">BSE SUBJECTS:</p>
+                                <p class="pil-subjects" style="top: 201px; left: 458px;">REQUIRED SUBJECTS</p>
+                                <p class="pil-subjects" style="top: 280px; left: 495px;">REQUIRED SUBJECTS</p>
+                                <p class="pil-italic">IMPORTANT INFORMATION</p>
+                                <p class="pil-downtext">
+                                    TEXT</br>
+                                    </br>
+                                    TEXT:</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                    </br>
+                                    IMPORTANT INFORMATION</p>
+                                <span class="pil-border"></span>
+                            </div>
+                            
+                            <div class="profile-info-list" id="pil_f">
+                                <div class="profile-info-list-closer" onclick="PilClose(2)"></div>
+                                <img src="Images/pil_f.png" style="width: 100%; height: 100%;">
+                                <p class="pil-title">TECHNOLOGICAL</p>
+                                <p class="pil-brackets">(PHYSICAL AND MATHEMATICAL DIRECTION)</p>
+                                <p class="pil-left-sub" style="top: 185px;">PROFILE SUBJECTS:</p>
+                                <p class="pil-left-sub" style="top: 265px;">BSE SUBJECTS:</p>
+                                <p class="pil-subjects" style="top: 201px; left: 430px;">REQUIRED SUBJECTS</p>
+                                <p class="pil-subjects" style="top: 280px; left: 610px;">REQUIRED SUBJECTS</p>
+                                <p class="pil-italic">IMPORTANT INFORMATION</p>
+                                <p class="pil-downtext">
+                                    TEXT</br>
+                                    </br>
+                                    TEXT:</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                    </br>
+                                    IMPORTANT INFORMATION</p>
+                                <span class="pil-border"></span>
+                            </div>
+                            <div class="profile-info-list" id="pil_h">
+                                <div class="profile-info-list-closer" onclick="PilClose(3)"></div>
+                                <img src="Images/pil_h.png" style="width: 100%; height: 100%;">
+                                <p class="pil-title">NATURAL SCIENCE</p>
+                                <p class="pil-brackets">(MEDICAL DIRECTION)</p>
+                                <p class="pil-left-sub" style="top: 185px;">PROFILE SUBJECTS:</p>
+                                <p class="pil-left-sub" style="top: 265px;">BSE SUBJECTS:</p>
+                                <p class="pil-subjects" style="top: 201px; left: 430px;">REQUIRED SUBJECTS</p>
+                                <p class="pil-subjects" style="top: 280px; left: 645px;">REQUIRED SUBJECTS</p>
+                                <p class="pil-italic">IMPORTANT INFORMATION</p>
+                                <p class="pil-downtext">
+                                    TEXT</br>
+                                    </br>
+                                    TEXT:</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                    </br>
+                                    IMPORTANT INFORMATION</p>
+                                <span class="pil-border"></span>
+                            </div>
+                            <div class="profile-info-list" id="pil_i">
+                                <div class="profile-info-list-closer" onclick="PilClose(4)"></div>
+                                <img src="Images/pil_i.png" style="width: 100%; height: 100%;">
+                                <p class="pil-title">SOCIO-HUMANITARIAN</p>
+                                <p class="pil-brackets">(SOCIAL DIRECTION)</p>
+                                <p class="pil-left-sub" style="top: 185px;">PROFILE SUBJECTS:</p>
+                                <p class="pil-left-sub" style="top: 265px;">BSE SUBJECTS:</p>
+                                <p class="pil-subjects" style="top: 201px; left: 430px;">REQUIRED SUBJECTS</p>
+                                <p class="pil-subjects" style="top: 280px; left: 580px;">REQUIRED SUBJECTS</p>
+                                <p class="pil-italic">IMPORTANT INFORMATION</p>
+                                <p class="pil-downtext">
+                                    TEXT</br>
+                                    </br>
+                                    TEXT:</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                        TEXT</br>
+                                    </br>
+                                    IMPORTANT INFORMATION</p>
+                                <span class="pil-border"></span>
+                            </div>
+
+
+                            <div class="profile-img-block" style="left: 0px; top: 0px;">
+                                <img src="Images/pr1.jpg" alt="pr1" class="profile-img">
+                                <p class="profile-name fs35">LINGUISTIC<br/>PROFILE</p>
+                                <p class="profile-img-block-text">INFORMATION ABOUT<br/>IN-DEPTH STUDY SUBJECTS</p>
+                                <span class="profile-info" onclick="ProfileInfo(1)"><p class="profile-info-text fs17">Learn more</p></span>
+                            </div>
+                            <div class="profile-img-block" style="left: 650px; top: 0px;">
+                                <img src="Images/pr2.png" alt="pr2" class="profile-img">
+                                <p class="profile-name fs35">TECHNOLOGICAL<br/>PROFILE</p>
+                                <p class="profile-img-block-text">INFORMATION ABOUT<br/>IN-DEPTH STUDY SUBJECTS</p>
+                                <span class="profile-info" onclick="ProfileInfo(2)"><p class="profile-info-text fs17">Learn more</p></span>
+                            </div>
+                            <div class="profile-img-block" style="left: 0px; top: 450px;">
+                                <img src="Images/pr3.jpg" alt="pr3" class="profile-img">
+                                <p class="profile-name fs35">NATURAL SCIENCE<br/>PROFILE</p>
+                                <p class="profile-img-block-text">INFORMATION ABOUT<br/>IN-DEPTH STUDY SUBJECTS</p>
+                                <span class="profile-info" onclick="ProfileInfo(3)"><p class="profile-info-text fs17">Learn more</p></span>
+                            </div>
+                            <div class="profile-img-block" style="left: 650px; top: 450px;">
+                                <img src="Images/pr4.jpg" alt="pr4" class="profile-img">
+                                <p class="profile-name fs35">HISTORICAL<br/>PROFILE</p>
+                                <p class="profile-img-block-text">INFORMATION ABOUT<br/>IN-DEPTH STUDY SUBJECTS</p>
+                                <span class="profile-info" onclick="ProfileInfo(4)"><p class="profile-info-text fs17">Learn more</p></span>
+                            </div>
+                        </div>
+
+                        <div class="profile-buttons-block">
+                            <a href="#"><div class="profile-info-border" style="left: 0%;">
+                                <p class="pit fs35">STATEMENT</p>
+                            </div></a>
+                            <a href="#"><div class="profile-info-border" style="left: 350px;">
+                                <p class="pit fs35">AGREEMENT</p>
+                            </div></a>
+                            <div class="profile-info-border" style="left: 700px;" onclick="ProfileHalfSlide(1)">
+                                <p class="pit fs35">1TH GRADE ⇨</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-half">
+
+                        <p class="profile-title fs50">ADMISSION TO 1TH GRADE</p>
+
+
+
+                        <div class="profile-buttons-block" style="left: 25.4%; width: 700px;">
+                            <div class="profile-info-border" style="left: 0%;" onclick="ProfileHalfSlide(2)">
+                                <p class="pit fs35">⇦ 10TH GRADE</p>
+                            </div></a>
+                            <a href="#"><div class="profile-info-border" style="left: 350px;">
+                                <p class="pit fs35">AGREEMENT</p>
+                            </div></a>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+         <!--Teachers-->
+
+            <div class="teacher-block" id="tb">
+
+                <p class="teacher-title fs50">TEACHING STAFF</p>
+
+                <div class="teacher-images-block">
+                <div class="teacher-img sb1" style="top: 0px;">
+                    <img src="Images/teacher1.png" ei" class="teacher-img">
+                    <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                </div>
+                <p class="teacher-name tfs30 str1 sbta1">NAME</p>
+                <p class="teacher-post fs20 str2 sbta2">SPECIALIZATION</p>
+
+                    <div class="teacher-img sb2" style="top: 0px;">
+                        <img src="Images/teacher2.png" class="teacher-img">
+                        <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                    </div>
+                    <p class="teacher-name tfs30 str1" style="left: 455px;">NAME</p>
+                    <p class="teacher-post fs20 str2" style="left: 595px; text-align: center;">SPECIALIZATION</p>
+
+                        <div class="teacher-img sb3" style="top: 0px;">
+                            <img src="Images/teacher3.png" class="teacher-img">
+                        </div>
+                        <p class="teacher-name tfs30 str1 sbth1">NAME</p>
+                        <p class="teacher-post fs20 str2 sbth2">SPECIALIZATION</p>
+
+                        <div class="teacher-img sb1" style="top: 565px;">
+                            <img src="Images/teacher4.png" class="teacher-img">
+                            <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                        </div>
+                        <p class="teacher-name tfs30 str3 sbem" style="font-size: 27px;">NAME</p>
+                        <p class="teacher-post fs20 str4 sbem" style="text-align: center; left: 70px;">SPECIALIZATION</p>
+
+                    <div class="teacher-img sb2" style="top: 565px;">
+                        <img src="Images/teacher5.png" class="teacher-img">
+                        <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                    </div>
+                    <p class="teacher-name tfs30 str3" style="font-size: 27px; left: 440px;">NAME</p>
+                    <p class="teacher-post fs20 str4" style="left: 530px;">SPECIALIZATION</p>
+
+                <div class="teacher-img sb3" style="top: 565px;">
+                    <img src="Images/teacher6.png" class="teacher-img">
+                    <span class="teacher-img" style="background: rgba(0, 0, 0, 0.2);"></span>
+                </div>
+                <p class="teacher-name tfs30 str3 sbtsm1">NAME</p>
+                <p class="teacher-post fs20 str4 sbtsm2">SPECIALIZATION</p>
+                </div>
+
+                <a href="#"><div class="teacher-info-border" style="top: 1350px; left: 50%; transform: translate(-50%); border-color: #2D68FF;">
+                    <p class="teacher-info-text fs50">LEARN MORE</p>
+                </div></a>
+
+            </div>
+
+         <!--Gallery-->
+
+            <div class="gallery-block">
+                <div class="greengalleryblock"></div>
+                <div class="bluegalleryblock"></div>
+
+                <span class="gallery-block">
+                    <p class="gallery-title fs50">GALLERY</p>
+                </span>
+
+                <div class="gallery-wrapper">
+                    <div class="gallery-line">
+                        <img class="gallery-img gi1" src="Images/gr1.png" id="gimg1"></img>
+                        <img class="gallery-img gi2" src="Images/gr2.png" id="gimg2"></img>
+                        <img class="gallery-img gi3 big" src="Images/gr3.png" id="gimg3"></img>
+                        <img class="gallery-img gi4" src="Images/gr4.png" id="gimg4"></img>
+                        <img class="gallery-img gi5" src="Images/gr5.png" id="gimg5"></img>
+                    </div>
+                </div>
+
+                <div class="gallery-buttons" style="left: 0%;" id="gbl" onclick="gblClick();"></div>
+                <div class="gallery-buttons" style="right: 0%;" id="gbr" onclick="gbrClick();"></div>
+
+            </div>
+
+         <!--Contacts and map-->
+
+        <div class="contactsandmap-block">
+            <div class="contacts-block">
+                <p class="contacts-text-top fs40" id="ctt1">Full name<br/>of school</p>
+                <p class="contacts-text-top fs40" id="ctt2">name<br/>name and city</p>
+                <p class="contacts-adress-text fs40" id="ctat">street, number<br/>city, country</p>
+                <p class="contacts fs25" id="ctt">email<br/>phone number</p>
+                <!--<p class="copyright fs17" style="top: 671px;">© 2022 Yurchenko Nikita</p>-->
+            </div>
+
+            <div class="map-block">
+                <iframe src="map" width="100%" height="864px" frameborder="0"></iframe>
+                <div class="mapbuttons"></div>
+            </div>
+
+        </div>
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                <a href="#"><span class="call-border"><p class="call-text">ОБРАТНАЯ СВЯЗЬ</p></span></a>
+                <p class="call-info">Вы можете задать нам вопросы<br/>через специальную форму</p>
+
+            </div>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>
